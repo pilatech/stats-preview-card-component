@@ -33,7 +33,7 @@ body {
  background: var(--color-dark-desaturated-blue);
  width: 98%;
  max-width: 37.5rem;
- margin: 8rem auto;
+ margin: 4rem auto;
  border-radius: 1rem;
  display: flex;
  flex-direction: column;
@@ -87,5 +87,39 @@ body {
  display: block;
  color: var(--color-transparent-white-2);
  text-transform: uppercase;
- margin-top: 1rem;
+ margin-top: 5px;
+}
+
+@media (min-width: 1120px){
+ .card {
+  flex-direction: row;
+  max-width: 90rem;
+  margin-top: 15rem;
+ }
+ .card__hero { 
+  order: initial;
+  height: initial;
+  width:  50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ }
+
+ .card__content {
+  width: 50%;
+  text-align: left;
+ }
+
+ .card__title {
+  margin-bottom: 2rem;
+ }
+
+ .card__text {
+  line-height: 1.7;
+  margin-bottom: 5rem;
+ }
+
+ .card__stats {
+  flex-direction: row;
+ }
 }
